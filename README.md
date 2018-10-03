@@ -15,7 +15,7 @@ Every registered user can add comments for every post.
 3. [MongoDB](https://www.mongodb.com/) database
 4. An account on [Google developers](https://console.cloud.google.com) with API for Maps and Geocode 
 
-If you want to deploy the website on sites like Heroku you need to create a MongoDB account on the cloud (like [mlab](https://mlab.com/))
+If you want to deploy the website on sites like Heroku you need to create a MongoDB account on the cloud (like [mLab](https://mlab.com/))
  
 
 ###  Install the dependencies
