@@ -1,0 +1,16 @@
+<% include ../partials/header.ejs %>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="h3 mb-3 font-weight-normal text-center">Edit Comment</h1>
+            <form class="form-signin" action="/campgrounds/<%= campground_id %>/comments/<%= comment._id %>?_method=PUT" method="POST">
+
+                <label for="inputComment" class="sr-only">Username</label>
+                <textarea id="inputComment" class="form-control" name="comment[text]" cols="30" rows="5" required autofocus><%= comment.text %></textarea>
+
+                <button class="btn btn-lg btn-primary btn-block mb-2" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+<% include ../partials/footer.ejs %>

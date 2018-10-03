@@ -1,0 +1,19 @@
+<% include ./partials/header.ejs %>
+
+<div class="row">
+    <div class="col-md-12">
+        <form class="form-signin" action="/reset/<%= token %>" method="POST">
+            <h1 class="h3 mb-3 font-weight-normal">Reset Password</h1>
+
+            <label for="inputPassword" class="sr-only">Username</label>
+            <input type="password" id="inputPassword" class="form-control" name="password" placeholder="New Password" required autofocus>
+
+            <label for="inputConfirmPassword" class="sr-only">Password</label>
+            <input type="password" id="inputConfirmPassword" class="form-control" name="confirm" placeholder="Confirm New Password" required>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Update Password</button>
+        </form>
+    </div>
+</div>
+
+<% include ./partials/footer.ejs %>
